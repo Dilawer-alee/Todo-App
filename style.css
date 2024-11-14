@@ -1,0 +1,140 @@
+/* Resetting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #8962b6; /* Softer green for the background */
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main To-do App Container */
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #F2F4F8; /* Light greyish-blue background */
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading Styling */
+.head {
+    font-size: 30px;
+    color: #274FA7; /* Deep blue color */
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Input and Add Button Section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#todo {
+    flex: 1;
+    border: 2px solid #3D39AA;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    color: #3D39AA;
+    background-color: #FFFFFF; /* Clean white for input field */
+    transition: all 0.3s ease;
+}
+#todo:focus {
+    border-color: #274FA7;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add Button */
+#add-btn {
+    background-color: #4E71D1;
+}
+#add-btn:hover {
+    background-color: #1C1675;
+}
+
+/* Delete All Button */
+#remove-btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #AF7EEB;
+}
+#remove-btn:hover {
+    background-color: #5E1675;
+}
+
+/* Todo List Styling */
+.todo-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* Each Todo Item Row */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8EBF7; /* Light greyish background for tasks */
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #3D39AA;
+}
+
+/* Task Action Buttons */
+.todo-item button {
+    background-color: #A3B1F2; /* Light blue background for buttons */
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    border: none; /* Removing border for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Edit Button Styling */
+.todo-item button#edit-btn {
+    background-color: #28a745; /* Green color for Edit */
+    color: white;
+}
+
+/* Delete Button Styling */
+.todo-item button#delete-btn {
+    background-color: #dc3545; /* Red color for Delete */
+    color: white;
+}
+
+/* Edit and Delete Button Hover Effect (Simplified) */
+.todo-item button:hover {
+    opacity: 0.8;  /* Slight transparency on hover */
+    transform: scale(1.05); /* Subtle scaling effect */
+}
